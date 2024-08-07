@@ -1,0 +1,299 @@
+@import url(./reset.css);
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+body{
+    margin-top: 3rem;
+    font-family: "karla", sans-serif;
+    font-weight: 400,700; 
+    color: var(--very-dark-blue); 
+    width: 100%;
+}
+.container, .container2{
+    margin-left: 3rem;
+}
+nav{
+    display: flex;
+    gap: 45rem;
+    align-items: center;
+}
+.links{
+    display: flex;
+    gap: 4rem;    
+}
+.links a{
+    color: var(--very-dark-blue);
+    text-decoration: none;
+    transition-duration: 1s;
+}
+.first, .second {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.get-started{
+    margin-top: 2rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 0.8rem;
+}
+.avatar{
+    border-radius: 50%;
+    width: 3vw;
+}
+.one, .two{
+    width: 45vw;
+    margin-right: 4rem;
+}
+.ones{
+    display: none;
+}
+.two{
+    margin-top: 8rem;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-self: space-evenly;
+}
+.green a{
+    color: var(--Moderate-Cyan);
+}
+h1{
+    line-height: 50px;
+}
+h2{
+    font-size: 27px;
+}
+.p2, .p{
+    margin-top: 2rem;
+    max-width: 500px;
+    line-height: 30px;
+}
+p{
+    font-size: 16px; 
+}
+.first-button{
+   padding: 1rem 3rem;
+   background-color: var(--Bright-Blue);
+   border: none;
+   color: #fff;
+}
+input{
+    padding: 0.9rem 5rem;
+}
+.input1{
+    padding: 0.9rem 10rem;
+}
+.fylo{
+    font-size: 13px;
+    line-height: 18px; 
+}
+.quotes{
+    align-items: center;
+    margin-top: 5rem;
+    width: 25vw;
+    height: 16vw;
+    background-color: white;
+    box-shadow: 3px 2px 3px 2px silver;
+    border-radius: 4px;
+}
+.box{
+    margin-left: 2rem;
+    max-width: 250px;
+    padding-top: 1.5rem;
+}
+.sign-up{
+    color: white;
+    gap: 10rem;
+    background-color: var(--Desaturated-Blue);
+    margin-top: 5rem;
+    height: 20vw;
+}
+.twos{
+    display: none;
+}
+.container2{
+    display: flex;
+    padding-top: 3rem;
+    align-items: center;
+    gap: 6rem;
+}
+button{
+    margin-top: 2rem; 
+    padding: 1rem 5rem;
+   background-color: var(--Bright-Blue);
+   border: none;
+   color: #fff;
+
+}
+footer{
+    background-color: var(--very-dark-blue);
+    color: #fff;
+    line-height: 30px;
+}
+.phone, .email{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.privacy{
+    margin-left: 3rem;
+    padding-top: 3rem;
+    display: flex;
+    gap: 20rem;
+}
+.img{
+    margin-left: 3rem;
+    padding-top: 3rem;
+}
+.about a{
+    text-decoration: none;
+    transition-duration: 3s;
+    color: #fff;
+}
+.about a:hover{
+    color: var(--Desaturated-Blue);
+}
+
+@media only screen and (max-width:850px){
+    body{
+        margin-top: 3rem;
+        font-family: "karla", sans-serif;
+        font-weight: 400,700; 
+        color: var(--very-dark-blue); 
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+    }
+    .links{
+        display: flex;
+        gap: 2rem;    
+    }
+    .first-button{
+        padding: 1rem 8.1rem;
+    }
+}
+@media only screen and (max-width:450px){
+    body{
+        margin-top: 3rem;
+        font-family: "karla", sans-serif;
+        font-weight: 400,700; 
+        color: var(--very-dark-blue); 
+        width: 100%;
+    }
+    .twos{
+        display: block;
+        width: 98vw;
+        margin-top: 2rem;
+    }
+    .container, .container2{
+        margin-left: 1rem;
+    }
+    nav{
+        display: flex;
+        gap: 3rem;
+    }
+    .links{
+        display: flex;
+        gap: 1rem;    
+    }
+    .first, .second {
+        display: block;
+    }
+    .get-started{
+        margin-top: 2rem;
+    }
+    .flex{
+        display: flex;
+        gap: 0.5rem;
+        padding-top: 0.8rem;
+    }
+    .avatar{
+        width: 9vw;
+    }
+    .one{
+        display: none;
+    }
+    .two{
+        width: 100vw;
+        margin-right: 4rem;
+    }
+    .ones{
+        display: block;
+        width: 96vw;
+        margin-top: 2rem;
+    }
+    .two{
+        margin-top: 8rem;
+    }
+    .arrow{
+        padding-left: 5rem;
+    }
+    h1{
+        line-height: 50px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .first-button{
+        margin-top: 1rem;
+       padding: 1rem 8.1rem;
+    }
+    input{
+        padding: 0.9rem 5rem;
+    }
+    .input1{
+        margin-top: 2rem;
+        padding: 0.9rem 6rem;
+        margin: 0, auto;
+    }
+    .quotes{
+        margin: auto;
+        margin-top: 5rem;
+        width: 70vw;
+        height: 50vw;
+    }
+    .sign-up{
+        color: white;
+        gap: 10rem;
+        margin-top: 5rem;
+        height: 90vw;
+    }
+    .container2{
+        display: block;
+        gap: 6rem;
+        margin-top: 2rem;
+    }
+    .button{
+        margin-bottom: 2rem; 
+    }
+    button{
+        padding: 1rem 7.3rem;
+    }
+    .phone, .email, .privacy{
+        display: block;
+    }
+    .info, .about, .contact{
+        margin-top: 2rem;
+    }
+
+}
